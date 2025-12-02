@@ -1,0 +1,62 @@
+
+#chk-burger{
+    position: absolute;
+    left: -9999px;
+}
+
+
+.menu a{
+    display: block;
+    text-decoration: none;
+    font-size: 2rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 10px 14px;
+    margin: 8px 6px;
+   
+    background: linear-gradient(90deg, rgba(46,139,87,1), rgba(76,175,80,0.9));
+    color: #ffffff;
+    border-radius: 6px;
+    transition: background 220ms ease, transform 180ms ease;
+}
+
+.menu a:hover{
+   
+    background: linear-gradient(90deg, rgba(215,149,64,1), rgba(231,196,78,0.95));
+    color: #08241a;
+    transform: translateX(-6px);
+}
+
+.menu{
+    padding: 12px;
+    background-color: rgba(6,48,37,0.96); 
+    width: 300px;
+  
+    transition: transform 450ms cubic-bezier(.2,.9,.3,1), opacity 300ms ease;
+    will-change: transform, opacity;
+    opacity: 0;
+}
+
+
+#chk-burger:checked ~ .menu{
+    transform: translateX(0);
+    opacity: 1;
+}
+
+
+.menu__burger{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    z-index: 1001;
+}
+.menu__burger img{
+    display: block;
+    transition: transform 300ms ease, filter 200ms ease;
+}
+
+
+#chk-burger:checked + .menu__burger img{
+    transform: rotate(90deg) scale(1.06);
+    filter: drop-shadow(0 4px 8px rgba(0,0,0,0.25));
+}

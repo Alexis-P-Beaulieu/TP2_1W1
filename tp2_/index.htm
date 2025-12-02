@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liens internes</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/menu.css"> 
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/formulaire.css">
+    <link rel="stylesheet" href="css/bouton_burger.css">
+    <!-- Google Fonts: Montserrat (titles) + Merriweather (body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <div class="conteneur hero">
+        <header class="centre hero__header" id="Accueil">
+            <h1>Rendonnée en Montagne</h1>
+                <div class="navigation">
+
+            <!------------Bouton Burger --------->
+            <input type="checkbox" name="" id="chk-burger">
+            <label for="chk-burger" class="menu__burger">
+                <img src="https://s2.svgbox.net/hero-outline.svg?ic=menu&color=000" width="32" height="32" alt="menu">
+            </label>
+            <nav class="menu">
+                <a href="#Accueil" class="menu__a">Accueil</a>
+                <a href="#un" class="menu__a">UN</a>
+                <a href="#deux" class="menu__a">DEUX</a>
+                <a href="#trois" class="menu__a">TROIS</a>
+                <a href="#quatre" class="menu__a">QUATRE</a>
+                <a href="#cinq" class="menu__a">CINQ</a>
+                <a href="#inscription" class="menu__a">inscription</a>
+            </nav>
+            <h2> Exploration des Monts du Québec</h2>
+            <p>Auteur : Alexis Poirier Beaulieu</p>
+            <a class="hero__bouton" href="#inscription">inscription</a>
+        </header>
+    </div>
+
+    <div class="conteneur">
+        <section class="centre" id="un">
+            <h2>tableau des prix</h2>
+
+                <table class="tableau">
+        <caption>Prix pour chaque mont</caption>
+        <thead>
+            <tr>
+                <th>Mont</th>
+                <th>Jour 1</th>
+                <th>Jour 2</th>
+                <th>Jour 3</th>
+                <th>Jour 4</th>
+                <th>Jour 5</th>
+                <th>Jour 6</th>
+                <th>Jour 7</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Mont-Tremblant</td>
+                <td>50.00</td>
+                <td>65.00</td>
+                <td>84.50</td>
+                <td>109.85</td>
+                <td>142.81</td>
+                <td>185.65</td>
+                <td>241.34</td>
+            </tr>
+            <tr>
+                <td>Mont-Orford</td>
+                <td>40.00</td>
+                <td>52.00</td>
+                <td>67.60</td>
+                <td>87.88</td>
+                <td>114.24</td>
+                <td>148.52</td>
+                <td>193.07</td>
+            </tr>
+            <tr>
+                <td>Mont-Sainte-Anne</td>
+                <td>45.00</td>
+                <td>58.50</td>
+                <td>76.05</td>
+                <td>98.87</td>
+                <td>128.52</td>
+                <td>167.08</td>
+                <td>217.21</td>
+            </tr>
+            <tr>
+                <td>Mont-Jacques-Cartier</td>
+                <td>60.00</td>
+                <td>78.00</td>
+                <td>101.40</td>
+                <td>131.82</td>
+                <td>171.37</td>
+                <td>222.78</td>
+                <td>289.61</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+        </section>
+    </div>
+    <div class="conteneur">
+        <section class="" id="deux">
+            <h2>DEUX</h2>
+        </section>
+    </div>
+    <div class="conteneur">
+        <section class="centre" id="trois">
+            <h2>TROIS</h2>
+        </section>
+    </div>
+    <div class="conteneur">
+        <section class="centre" id="quatre">
+            <h2>QUATRE</h2>
+        </section>
+    </div>
+    <div class="conteneur">
+        <section class="centre" id="cinq">
+            <h2>CINQ</h2>
+        </section>
+    </div>
+    <div class="conteneur">
+        <section class="centre" id="inscription">
+            <h2>inscription</h2>
+        <form class="formulaire">
+            <div class="formulaire__div">
+                <label class="formulaire__label" for="nom">nom</label>
+                <input class="formulaire__input" id="nom" type="text" placeholder="Entrez votre nom ici">
+
+                <label class="formulaire__label" for="Prenom">Prenom</label>
+                <input class="formulaire__input" id="Prenom" type="text" placeholder="Entrez votre Prenom ici">
+            </div>
+            <div class="formulaire__div">
+                <label class="formulaire__label" for="courriel">courriel</label>
+                <input class="formulaire__input" id="courriel" type="text" placeholder="Entrez votre courriel ici">
+            </div>
+            <fieldset>
+                <legend>Abonnement</legend>
+                <label for="rad-1">Novice</label><input type="radio" name="rad-abonnement" id="rad-1" class="formulaire__rad-1">
+                <label for="rad-2">intermédiaire</label><input type="radio" name="rad-abonnement" id="rad-2" class="formulaire__rad-2">
+                <label for="rad-3">Pro</label><input type="radio" name="rad-abonnement" id="rad-3" class="formulaire__rad-3">
+            </fieldset>
+
+            <input class="formulaire__submit" type="submit" value="valider l'inscription">
+        </form>
+        </section>
+    </div>
+    <div class="conteneur">
+        <footer class="pied centre" role="contentinfo">
+            <div class="pied__inner">
+                <div class="pied__col">
+                    <h4>Adresse du Collège</h4>
+                    <address>
+                        Collège de l'Exemple<br>
+                        1234, rue Principale<br>
+                        Ville, Province  A1A 1A1<br>
+                        Tél. : (000) 000-0000
+                    </address>
+                </div>
+
+                <div class="pied__col">
+                    <h4>Liens importants</h4>
+                    <ul class="pied__liens">
+                        <li><a href="#Accueil">Accueil</a></li>
+                        <li><a href="#inscription">Inscription</a></li>
+                        <li><a href="#un">Tableau des prix</a></li>
+                        <li><a href="#deux">Programme</a></li>
+                    </ul>
+                </div>
+
+                <div class="pied__col pied__grow">
+                    <h4>Description du sujet</h4>
+                    <p>Ce site présente une exploration des monts du Québec, des informations pratiques et un formulaire d'inscription pour participer à des randonnées guidées.</p>
+                    <p><a class="pied__back" href="#Accueil">Retour à l'accueil</a></p>
+                </div>
+
+                <div class="pied__col">
+                    <h4>Réseaux sociaux</h4>
+                    <div class="pied__social">
+                        <a href="#" aria-label="Facebook" class="social social--facebook">
+                            <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M22 12.07C22 6.48 17.52 2 11.93 2S2 6.48 2 12.07c0 4.99 3.66 9.13 8.44 9.93v-7.03H8.08v-2.9h2.36V9.41c0-2.33 1.39-3.62 3.52-3.62. 1.02 0 2.09.18 2.09.18v2.3h-1.18c-1.16 0-1.52.72-1.52 1.46v1.75h2.59l-.41 2.9h-2.18v7.03C18.34 21.2 22 17.06 22 12.07z"/></svg>
+                        </a>
+                        <a href="#" aria-label="Twitter" class="social social--twitter">
+                            <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M22 5.92c-.63.28-1.3.48-2 .57.72-.43 1.27-1.12 1.53-1.94-.67.4-1.41.69-2.2.85C18.6 4.4 17.67 4 16.64 4c-1.58 0-2.86 1.28-2.86 2.86 0 .22.03.44.07.65C10.36 7.35 7.06 5.46 4.77 2.93c-.24.42-.38.9-.38 1.41 0 .97.49 1.82 1.24 2.32-.57-.02-1.1-.18-1.57-.43v.04c0 1.36.97 2.5 2.26 2.76-.24.06-.5.09-.77.09-.19 0-.38-.02-.56-.06.38 1.18 1.48 2.04 2.78 2.07-1.02.8-2.31 1.28-3.71 1.28-.24 0-.48-.01-.71-.04C6.67 18.1 8.9 19 11.35 19c6.3 0 9.75-5.22 9.75-9.75 0-.15-.01-.31-.02-.46.67-.48 1.25-1.08 1.71-1.77-.62.27-1.29.45-1.99.53z"/></svg>
+                        </a>
+                        <a href="#" aria-label="Instagram" class="social social--instagram">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.5" y2="6.5"/></svg>
+                        </a>
+                        <a href="#" aria-label="LinkedIn" class="social social--linkedin">
+                            <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M4.98 3.5C4.98 4.88 3.86 6 2.48 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM0 8h5v16H0zM8 8h4.8v2.2h.1c.7-1.3 2.4-2.2 4-2.2 4.3 0 5.1 2.8 5.1 6.4V24H17v-7.7c0-1.8 0-4.1-2.5-4.1-2.5 0-2.9 2-2.9 4v7.8H8V8z"/></svg>
+                        </a>
+                    </div>
+                    <p class="pied__prive"><a href="#">Avis de confidentialité | Privacy Notice</a></p>
+                </div>
+            </div>
+
+            <div class="pied__bas">
+                <small>&copy; 2025 Collège de l'Exemple — Tous droits réservés.</small>
+            </div>
+        </footer>
+    </div>
+
+</body>
+</html>
