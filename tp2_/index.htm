@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Liens internes</title>
+    <title>TP2</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/menu.css"> 
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/formulaire.css">
     <link rel="stylesheet" href="css/bouton_burger.css">
+    <link rel="stylesheet" href="css/article.css">
     <!-- Google Fonts: Montserrat (titles) + Merriweather (body) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,6 +20,9 @@
     <div class="conteneur hero">
         <header class="centre hero__header" id="Accueil">
             <h1>Rendonnée en Montagne</h1>
+            <a href="https://github.com/Alexis-P-Beaulieu/TP2_1W1" target="_blank">
+            <img class="hero__github" src="https://s2.svgbox.net/social.svg?ic=github&color=000" width="32" height="32" alt="GitHub" >
+            </a>
                 <div class="navigation">
 
             <!------------Bouton Burger --------->
@@ -28,8 +32,8 @@
             </label>
             <nav class="menu">
                 <a href="#Accueil" class="menu__a">Accueil</a>
-                <a href="#un" class="menu__a">UN</a>
-                <a href="#deux" class="menu__a">DEUX</a>
+                <a href="#un" class="menu__a">Tableux Des Prix</a>
+                <a href="#article" class="menu__a">Articles</a>
                 <a href="#trois" class="menu__a">TROIS</a>
                 <a href="#quatre" class="menu__a">QUATRE</a>
                 <a href="#cinq" class="menu__a">CINQ</a>
@@ -45,7 +49,7 @@
 
     <div class="conteneur">
         <section class="centre" id="un">
-            <h2>tableau des prix</h2>
+            <h2>Tableau des prix</h2>
 
                 <table class="tableau">
         <caption>Prix pour chaque mont</caption>
@@ -109,8 +113,41 @@
         </section>
     </div>
     <div class="conteneur">
-        <section class="" id="deux">
-            <h2>DEUX</h2>
+        <section class="centre" id="article">
+            <h2>Articles</h2>
+
+            <article class="article">
+                <img class="article__img" src="images/article1.jpg" alt="Sentier en forêt">
+                <div class="article__div">
+                    <h3 class="article__h3">Mont-Tremblant</h3>
+                    <p class="article__p">Un court sentier facile à travers les bouleaux et les conifères, parfait pour une promenade matinale et l'observation des oiseaux.</p>
+                </div>
+            </article>
+
+            <article class="article">
+                <img class="article__img" src="images/article2.jpg" alt="Vue de la montagne">
+                <div class="article__div">
+                    <h3 class="article__h3">Mont-Orford</h3>
+                    <p class="article__p">Au sommet, la vue panoramique récompense l'effort : lacs, vallées et crêtes se dévoilent à perte de vue.</p>
+                </div>
+            </article>
+
+            <article class="article">
+                <img class="article__img" src="images/article3.jpeg" alt="Randonneur sur le sentier">
+                <div class="article__div">
+                    <h3 class="article__h3">Mont-Sainte-Anne</h3>
+                    <p class="article__p">Les randonnées guidées permettent d'apprendre la faune locale et les bonnes pratiques pour respecter les milieux naturels.</p>
+                </div>
+            </article>
+
+            <article class="article">
+                <img class="article__img" src="images/article4.jpg" alt="Coucher de soleil sur la crête">
+                <div class="article__div">
+                    <h3 class="article__h3">Mont-Jacques-Cartier</h3>
+                    <p class="article__p">Terminez la journée par un coucher de soleil sur la crête : lumière chaude, silhouettes et calme de la montagne.</p>
+                </div>
+            </article>
+
         </section>
     </div>
     <div class="conteneur">
@@ -130,7 +167,7 @@
     </div>
     <div class="conteneur">
         <section class="centre" id="inscription">
-            <h2>inscription</h2>
+            <h2>Inscription</h2>
         <form class="formulaire">
             <div class="formulaire__div">
                 <label class="formulaire__label" for="nom">nom</label>
@@ -146,7 +183,7 @@
             <fieldset>
                 <legend>Abonnement</legend>
                 <label for="rad-1">Novice</label><input type="radio" name="rad-abonnement" id="rad-1" class="formulaire__rad-1">
-                <label for="rad-2">intermédiaire</label><input type="radio" name="rad-abonnement" id="rad-2" class="formulaire__rad-2">
+                <label for="rad-2">Intermédiaire</label><input type="radio" name="rad-abonnement" id="rad-2" class="formulaire__rad-2">
                 <label for="rad-3">Pro</label><input type="radio" name="rad-abonnement" id="rad-3" class="formulaire__rad-3">
             </fieldset>
 
@@ -158,12 +195,12 @@
         <footer class="pied centre" role="contentinfo">
             <div class="pied__inner">
                 <div class="pied__col">
-                    <h4>Adresse du Collège</h4>
+                    <h4>Adresse du site</h4>
                     <address>
-                        Collège de l'Exemple<br>
-                        1234, rue Principale<br>
-                        Ville, Province  A1A 1A1<br>
-                        Tél. : (000) 000-0000
+                        Centre Rendonnée en montagne<br>
+                        1234, Rue des Éclats-d'Aube<br>
+                        Montréal, Québec  A1A 1A1<br>
+                        Tél. : (122) 123-1234
                     </address>
                 </div>
 
@@ -204,7 +241,7 @@
             </div>
 
             <div class="pied__bas">
-                <small>&copy; 2025 Collège de l'Exemple — Tous droits réservés.</small>
+                <small>&copy; 2025 Centre Rendonnée en montagne — Tous droits réservés.</small>
             </div>
         </footer>
     </div>

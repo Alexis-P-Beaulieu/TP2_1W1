@@ -6,4 +6,4 @@ descriptif de page
 - cours : mise en page web
 - departement : TIM
 - college : m9
-github page : https://github.com/Alexis-P-Beaulieu
+github page : https://github.com/Alexis-P-Beaulieu/TP2_1W1

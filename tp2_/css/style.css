@@ -109,12 +109,17 @@ background: linear-gradient(270deg, rgba(42, 123, 155, 1) 0%, rgba(87, 136, 199,
 .pied__inner{
     display: flex;
     gap: 24px;
-    align-items: flex-start;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
 }
 .pied__col{
     flex: 0 0 220px;
+    text-align: center;
+}
+.pied__grow{
+    flex: 1 1 360px;
+    text-align: center;
 }
 .pied__grow{
     flex: 1 1 360px;
